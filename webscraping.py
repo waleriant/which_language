@@ -13,7 +13,8 @@ def delete_txt_between(my_string_, str1, str2):
         pos2 = my_string_.find(str2)
     return my_string_
 
-# delete such substrings: "[...]", "<...>", "(...)", "\n"
+# delete such substrings: "[xxx]", "<xxx>", "(xxx)", "\n"
+# add "[...]" in the end
 	
 def format_text(my_string_):
     words_list = my_string_.split()
@@ -53,13 +54,6 @@ def find_paragraph(url_):
             return my_string
     return ""
     
-# return the two following variables:
-# sentence = "Il-Monasteru ta' Maulbronn huwa eks abbazija tal-Ċisterċensi u eks stat ekkleżjastiku fl-Imperu Ruman Sagru li jinsab f'Maulbronn, Baden-Württemberg. Il-kumpless tal-monasteru, wieħed mill-iżjed ippr [...]"
-# options = [{"language": "Maltese", "is_answer": True},
-#            {"language": "English", "is_answer": False}, 
-#            {"language": "Italian", "is_answer": False}, 
-#            {"language": "Greek",   "is_answer": False}]
-
 # return the two following variables:
 # sentence = "Il-Monasteru ta' Maulbronn huwa eks abbazija tal-Ċisterċensi u eks stat ekkleżjastiku fl-Imperu Ruman Sagru li jinsab f'Maulbronn, Baden-Württemberg. Il-kumpless tal-monasteru, wieħed mill-iżjed ippr [...]"
 # options = [{"language": "Maltese", "is_answer": True},
