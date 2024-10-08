@@ -29,6 +29,9 @@ def format_text(my_string_):
     my_string_ = delete_txt_between(my_string_, "<", ">")
     my_string_ = delete_txt_between(my_string_, "(", ")")
     my_string_.replace("\n", "")
+    my_string_.replace("    ", " ")
+    my_string_.replace("   ", " ")
+    my_string_.replace("  ", " ")
         
     return my_string_ + " [...]"
     
