@@ -1,2 +1,2 @@
 # which_language
-A quiz to test your language detection skill (text)
+A quiz aimed at testing your language detection skill (text), based on webscraping
